@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function calc(){
+            res = eval("2*3+4*6");
+            document.writeln(res);
+
+            res2=parseInt("0x32"); //16진수->10진수 변환 계산
+            document.writeln(res2);
+
+            res3=parseInt("aaa");
+            if(isNaN(res3))
+             document.writeln("res3는 숫자가 아닙니다.")
+        }
+    </script>
+</head>
+<body>
+    <script>
+        calc();
+    </script>
+</body>
+</html>

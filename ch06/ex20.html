@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>1~10까지 3으로 나눈 나머지가 1인 수만 더하기</h3><hr>
+    <script>
+        //continue 사용하지 않고
+        var sum=0;
+        for(var i=1;i<=10;i++)
+        {
+            if(i%3==1) 
+            {
+                sum+=i; 
+                document.writeln(i);
+            }
+        }
+        document.writeln("<hr>");
+        document.writeln(sum);
+        //continue 사용
+        sum = 0;
+        for(var i=1;i<=10;i++){
+            if(i%3!=1){
+                continue; //증감식으로 이동
+            }
+            sum+=i;
+        }
+        document.writeln("<hr>");
+        document.writeln(sum);
+    </script>
+</body>
+</html>

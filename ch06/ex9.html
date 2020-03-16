@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <script>
+        function a(){
+            //alert("클릭을 하셨군요!!"); alert은 모바일에서 작고 불편해서 사용하지 않는다.
+            name = prompt("이름을 입력하세요,",""); //매개변수를 두개 받을 수도 있다.
+            document.writeln(name);
+            ok = confirm("결제할까요?"); 
+            if(ok){
+                document.writeln("결제 OK");
+            }else{
+                document.writeln("결제 CANCEL");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="a()">클릭</button>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    	table{
+            width:900px;
+            height:400px;
+            font-size: 20px;
+			border-collapse:collapse; 
+            text-align: center;
+    		border:black;
+    		background-color: lightskyblue;
+            margin:auto;
+           	}
+        table>caption{
+            font-size:40px;
+            color:lightcoral
+        }
+
+    </style>
+</head>
+<body>
+    <h3>중첩 for문</h3><hr>
+    <script>
+        
+        document.writeln("<table border='1'>");
+        document.writeln("<caption>구구단</caption>");
+
+        var result=0;
+        for(var i=1;i<=9;i++){
+            document.writeln("<tr>");
+            for(var j=1;j<=9;j++){
+                result=i*j;
+                document.writeln("<td>"+i+"*"+j+"="+result+"</td>");
+            }//for2
+            document.writeln("</tr>");
+        }//for1
+        document.writeln("</table>");
+
+    </script>
+</body>
+</html>

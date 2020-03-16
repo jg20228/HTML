@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>웹페이지의 구성 요소</title>
+    <style>
+      body{background-color : linen; color : green; margin-left : 40px; margin-right:40px;}
+        h3{text-align:center;color:darked;}
+        hr{height:5px;border:solid grey; background-color:grey;}
+    span{color:blue;font-size:20px;}
+    </style>
+    <script>
+        function show(){document.getElementById("fig").src="ElvisPresley.png";}
+        function hide(){document.getElementById("fig").src="";}
+    </script>
+</head>
+
+<body>
+    <h3 onmouseover="show()" onmouseout="hide()"> ElvisPresley</h3>
+    <img id="fig" src="">
+</body>
+
+</html>

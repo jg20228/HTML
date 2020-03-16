@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var s = "https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=102&oid=421&aid=0004515570";
+    document.writeln(s.indexOf('?')+"<br>");
+    s1 = s.slice(s.indexOf('?')+1);
+    document.writeln(s1+"<br>");
+    s2=s1.split('&');
+    document.writeln(s2+"<hr>");
+    for(i=0;i<s2.length;i++){
+        document.writeln(s2[i].split("=")[0]+"<br>");
+    }
+    document.writeln("<hr>");
+    for(i=0;i<s2.length;i++){
+        document.writeln(s2[i].split("=")[1]+"<br>");
+    }
+    
+
+    </script>
+</body>
+</html>

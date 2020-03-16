@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>제어문 -> 반복문 -> for문</h3><hr>
+    <script>
+        //1에서 10까지 합을 구하시오.
+        var sum=0;
+        for(var i=1;i<11;i++){
+            sum=sum+i;
+        }
+        document.writeln("sum :"+sum+"<br>");
+
+        sum=0;
+        for(var i=1;i<11;i++){
+            sum+=i;
+            if(i!=10) document.writeln(i+" + ");
+            else document.writeln(i+" = ");
+        }
+        document.writeln(sum+"<br>");
+        //1~30에서 짝수의 합을 구하시오.
+        sum = 0;
+        for(var i=1;i<31;i++){
+            if(i%2==0){
+            document.writeln(i);
+            sum+=i;
+            }
+        }
+        document.writeln(sum+"<br>");
+        //1~20에서 3의 배수의 합을 구하시오.
+        sum = 0;
+        for(var i=1;i<21;i++){
+            if(i%3==0){
+            if(i!=18) document.writeln(i+" + ");
+            else document.writeln(i+" = ");        
+            sum+=i;
+            }
+        }
+        document.writeln(sum+"<br>");
+
+        sum=0;
+
+        for(var i=1;i<=20;i++){
+            if(i%10==3||i%10==6||i%10==9) document.writeln("박수 ");
+            else if(i!=20) document.writeln(i+" + ");
+            else document.writeln(i+" = ");
+        }
+        document.writeln(sum+"<br>");
+
+
+        //369 - 입력시 입력한값까지 369 게임을 진행 
+        var test=0;
+        var test2=0;
+        test = prompt("입력","");
+        test = parseInt(test);
+        document.writeln(test+"<br>");
+        for(var z=1;z<=test;z++){
+            test2=z;
+            document.writeln(z);
+            do{
+            if(test2%10==3||test2%10==6||test2%10==9){
+                document.writeln("(박수)<br>");
+                break;
+            }else{
+                test2=test2/10;               
+                test2 = parseInt(test2);
+            }
+            }while(test2>0)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>String 객체 사용하기</h3><hr>
+    <script>
+        var a = new String("Boys and Girls");
+        var b = "!!";
+        //문자열 - 문자(한개의 단어)
+        document.writeln(a.charAt(0)+"<br>");
+        //concat 메소드는 가변인수 선언
+        document.writeln(a.concat(b,"입니다")+"<br>");
+        document.writeln(a.concat(b));
+        document.writeln(a.concat(b,"a","bb","cc")+"<br>");
+        document.writeln(a.indexOf('s')+"<br>"); //indexOf 많이씀
+        document.writeln(a.lastIndexOf('s')+"<br>");
+        document.writeln(a.indexOf('and')+"<br>"); 
+        document.writeln(a.indexOf('And')+"<br>");
+        document.writeln(a.slice(5,8)+"<br>");
+        document.writeln(a.toUpperCase()+"<br>");
+        document.writeln(a.replace("and","or")+"<br>");
+        document.writeln("       simba     ".trim()+"<br>");//trim()앞뒤의 공백을 제거
+        var sub = a.split(" ");//빈칸을 구분자로 분리
+        for(i=0;i<sub.length;i++){
+            document.writeln(sub[i]+"<hr>");
+        }
+        ///////////////////////////////////////////////////////////////
+        var s = "https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=102&oid=421&aid=0004515570";
+        /*
+            mode
+            mid
+            sid1
+            old...
+            ---------------------------------------
+            LSD
+            shm
+            102
+            102.....
+        */
+        document.writeln(s+"<hr>");
+        var s1= s.slice(s.indexOf('?')+1); //?이후로 저장
+        document.writeln(s1+"<hr>");
+        var s2=s1.split("&");
+        document.writeln(s2+"<hr>");  
+        for(i=0;i<s2.length;i++){
+            var s3 = s2[i].split('=');
+            document.writeln(s3[0]+"<br>");
+        }
+        document.writeln("<hr>");
+        for(i=0;i<s2.length;i++){
+            //var s3 = s2[i].split('=');
+            document.writeln(s2[i].split('=')[1]+"<br>");
+        }
+        //split은 입력한 값을 기준으로 나누어서 배열에 저장한다.
+        //mode=LSD&mid=shm&sid1=102&oid=421&aid=0004515570 '&값 적용'
+        //mode=LSD,mid=shm,sid1=102,oid=421,aid=0004515570
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sum=0;
+        function calc(box){
+            //코드 비교
+            if(box.checked){
+                sum+=parseInt(box.value);
+            }else{
+                sum-=parseInt(box.value);
+            }
+            document.getElementById("sum").value=sum;
+
+            /*내가만든거
+            s=document.getElementById("sum");
+            if(box.checked==true){
+            sum+=parseInt(box.value);
+            s.value=sum;
+            }else if(box.checked==false){
+                sum-=parseInt(box.value);
+                s.value=sum;
+            }*/
+        }
+    </script>
+</head>
+<body>
+    <h3>물품을 선택하면 자동으로 계산</h3><hr>
+    <form>
+        <input type="checkbox" name="hap" onclick="calc(this)" value="10000">모자 10,000
+        <input type="checkbox" name="shose" onclick="calc(this)" value="30000">구두 30,000
+        <input type="checkbox" name="bag" onclick="calc(this)" value="80000">가방 80,000<br>
+        합계 : <input id="sum" value="0">
+    </form>
+</body>
+</html>

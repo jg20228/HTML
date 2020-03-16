@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mystyle2.css" type="text/css" rel="stylesheet">
+    <title>Login</title>
+    <script>
+        function check(){
+            var f = document.frm;
+            if(f.id.value=="aaaa"&&f.pasw1.value=="1234"){
+                alert(f.id.value+"님 안녕하세요");
+                return;
+            }else{
+                alert("ID와 PW를 입력하세요.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;" style="margin-top: 100px;">
+        <form name="frm" method="post" required>
+            <input type="text" id="id" name="id" placeholder="아이디" required><br>
+            <input type="password" id="pswd1" name="pasw1" placeholder="비밀번호" required><br>
+            <input type="submit" value="Login" onclick=check()><br>
+            <input type="button" value="뒤로가기" onclick="history.back(-1);">
+        </form>
+    </div>
+    <br>
+    
+</body>
+</html>

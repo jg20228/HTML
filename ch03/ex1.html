@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 'onclick'이 되면 check()를 실행-->
+    <script>
+        function check(){
+                f = document.frm;  //document에 있는 frm을 앞으로 f라고 별명을 짓겠다.
+                if(f.id.value==""){
+                    alert("아이디를 입력하세요.")
+                return;
+            }else if(f.pwd.value==""){
+                alert("비밀번호를 입력하세요.")
+                return;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>로그인 폼</h3><hr>
+    <form name="frm" method="" action="">
+        <!-- form에서 name, method, action은 필수-->
+        <!-- name-->
+        <!-- method get(default)/post-->
+        <!-- get= post-->
+        <!-- action Server에 요청할때 page를 지정하는곳(id,pw 등)이 action-->
+        ID : <input size="15" name="id" value=""><br>
+        PWD : <input size="15" name="pwd" value=""><br>
+        <input type="submit" value="로그인" onclick="check()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+a{
+    text-decoration: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100%;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align:left;
+}
+
+ul{
+
+    text-align: right;
+}
+ul>li{
+    font-size: 50px;
+
+}
+
+header{
+    margin-top: 40px;
+    text-align: center;
+}
+
+input{
+    height:30px;
+    width:200px;
+    font-size:20px;
+    margin-top: 10px;
+}
+nav ul{padding-top:10px;} 
+
+nav ul li { display:inline;
+    border-left:2px solid lightcoral;
+    font:bold 14px Dotum;
+    padding:0 20px;} 
+nav ul li:first-child{border-left:none;}
+
+

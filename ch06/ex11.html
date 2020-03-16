@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>제어문 ->선택문 ->if, else if, else</h3><hr>
+    <script>
+        gender = "남자";
+        //if문안에는 반드시 true, false값이 들어간다.
+        if(gender=="남자"){
+            document.writeln("당신은 남자입니다.");
+        }else{
+            document.writeln("당신은 여자입니다.");
+        }
+        document.writeln("<hr>");
+        
+        //제어문 전체에 적용
+        //실행되는 코드에 중괄호가 없으면 밑에 또는 옆에 있는 한줄만 적용.
+        //실행되는 코드가 두줄이상이면 반드시 중괄호 사용.
+        if(false)
+            document.writeln("실행1");
+            document.writeln("실행2");//if문에 적용안됨.
+        if(false)   document.writeln("실행3");
+            document.writeln("실행4");
+        /////////////////////////////////////////////////////////////////    
+            document.writeln("<br>");
+        grade = "3";
+        if(grade==1||grade==2){
+            document.writeln("저학년입니다.");
+        }else if(grade==3||grade==4){
+            document.writeln("중학년입니다.");
+        }else if(grade==5||grade==6){
+            document.writeln("고학년입니다.");
+        }else{
+            document.writeln("범위를 벗어났습니다.");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원정보</h1>
+    <form>
+        <p>이름: <label><input type="text" name="name" maxlength="20" placeholder="이름 입력" required></label></p>
+        <p>아이디: <label><input type="text" name="id" maxlength="20" placeholder="아이디 입력" required></label>
+        <button type="button" id="idcheck"><span>중복확인</span></button><br></p>
+
+        비밀번호: <label><input type="password" name="pwd" maxlength="20" placeholder="비밀번호 입력" required></label><br><br>
+        비밀번호 확인: <label><input type="password" name="repwd" maxlength="20" placeholder="비밀번호 확인" required></label><br><br>
+
+        이메일: <label><input type="email" name="email" maxlength="100" placeholder="Ex)ds10123@naver.com" required></label><br><br>
+
+        이메일 수신 동의: <label>
+        동의<input type="radio" value="yes" name="email">
+        비동의<input type="radio" value="no" name="email"></label><br><br>
+
+        전화번호 : 
+        <select id="mobile" name="phone">
+            <option value="SKT" selected="">SKT</option>
+            <option value="KT">KT</option>
+            <option value="U+">U+</option>
+        </select>
+        <input type="tel" name="number" maxlength="8" placeholder="-빼고 숫자만 입력"><br><br>
+        <p>정보이용<label>
+        개인정보이용<input type="checkbox" value="개인정보이용" name="agree">
+        개인정보사용<input type="checkbox" value="개인정보사용" name="agree">
+        </label><br><br>
+        <button type="button" id="btnJoin"><span>가입</span></button><br><br><br>
+    </form>
+</body>
+</html>

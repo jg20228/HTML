@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!--style="resize: none;" 을 넣으면 사이즈 조절이 불가능 -->
+        <textarea cols="20" rows="5" style="resize: none;"> 폼에 들어가는 value 영역
+        </textarea><br>
+
+        <input type="text" list="country">
+        <datalist id="country">
+            <!-- input의 list 이름과 datalist의 id 이름과 같아야 한다.-->
+            <option>대한민국</option>
+            <option>일본</option>
+            <option>중국</option>
+        </datalist><br>
+
+        <!-- 다중체크-->
+        짜장면<input type="checkbox" value="1" name="china">
+        짬뽕<input type="checkbox" value="2" name="china" checked> <!--checked는 중요한 옵션-->
+        탕수육<input type="checkbox" value="3" name="china"><br>
+        <!-- 단일체크(name값이 다르면 중복 가능)-->
+        짜장면<input type="radio" value="1" name="china">
+        짬뽕<input type="radio" value="2" name="china">
+        탕수육<input type="radio" value="3" name="china"><br>
+
+        <select name="china">
+            <option value="1">짜장면</option>
+            <option value="2" selected>짬뽕</option> <!--selected는 중요한 옵션-->
+            <option value="3">탕수육</option>
+        </select><br>
+        
+        글자색 선택<input type="color" value="#00BFFF"
+        onchange="document.body.style.color=this.value"><br> 
+        배경색 선택<input type="color" value="#00BFFF"
+        onchange="document.body.style.background=this.value"><br>
+        <!--onchange는 색깔이 변경되었을때 발생하는 이벤트-->
+    </form>
+</body>
+</html>
